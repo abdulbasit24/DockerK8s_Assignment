@@ -4,7 +4,7 @@
 This project demonstrates the deployment of a simple Spring Boot application using Docker and Kubernetes on a local Minikube cluster.
 The application exposes a REST API, containerized using Docker, and the image is deployed to Kubernetes using YAML configuration files.
 
-### GitHub URL: 
+### GitHub URL: https://github.com/abdulbasit24/DockerK8s_Assignment.git
 
 
 ## How to Deploy
