@@ -13,7 +13,7 @@ The application exposes a REST API, containerized using Docker, and the image is
 ```bash
 git clone https://github.com/abdulbasit24/devopsassignment.git
 cd devopsassignment
-
+```
 
 ### 2. Build the Spring Boot Application
 Use Maven to package the application into a JAR file.
