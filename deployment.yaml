@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-deployment  # Can be renamed to any meaningful deployment name
+spec:
+  replicas: 2  #replicas
+  selector:
+    matchLabels:
+      app: devops-app  # Can be renamed to a meaningful app label
+  template:
+    metadata:
+      labels:
+        app: devops-app  # Should match the label defined in the selector
+    spec:
+      containers:
+      - name: devops-container  # Can be renamed to any meaningful container name
+        image: abdulbasit7/devopsassignment:latest  # Image from Docker Hub
+        ports:
+        - containerPort: 8081  # Port number should match the port exposed in the Dockerfile
