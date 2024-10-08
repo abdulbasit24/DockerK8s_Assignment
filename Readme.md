@@ -1,4 +1,3 @@
-
 ### DevOps Spring Boot Application Deployment on Kubernetes
 
 This project demonstrates the deployment of a simple Spring Boot application using Docker and Kubernetes on a local Minikube cluster.
@@ -6,12 +5,11 @@ The application exposes a REST API, containerized using Docker, and the image is
 
 ### GitHub URL: https://github.com/abdulbasit24/DockerK8s_Assignment.git
 
-
 ## How to Deploy
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/abdulbasit24/devopsassignment.git
+git clone https://github.com/abdulbasit24/DockerK8s_Assignment.git
 cd devopsassignment
 ```
 
@@ -24,36 +22,35 @@ mvn clean package
 ### 3. Create and Push Docker Image
 
 - Build the Docker image using the `Dockerfile`.
-
+```bash
 docker build -t abdulbasit7/devopsassignment:latest .
 ```
 
 - Log in to Docker Hub and push the image:
-
+```bash
 docker login
-
 docker push abdulbasit7/devopsassignment:latest
 ```
 
 ### 4. Deploy on Minikube
 
-- Start Minikube: minikube start
-
+- Start Minikube:
+```bash
+minikube start
+```
 
 - Apply the Kubernetes deployment and service YAML files:
-
+```bash
 kubectl apply -f deployment.yaml
-
 kubectl apply -f service.yaml
-
+```
 
 ### 5. Access the Application
 
 To access the application, run:
-
+```bash
 minikube service devops-service
-
-
+```
 
 ## Kubernetes YAML Files
 
@@ -111,7 +108,7 @@ ENTRYPOINT ["java", "-jar", "devops.jar"]
 ## Cleanup
 
 To stop and delete the Minikube cluster:
-
+```bash
 minikube stop
-
 minikube delete
+```
