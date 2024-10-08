@@ -4,7 +4,9 @@ This project demonstrates the deployment of a simple Spring Boot application usi
 The application exposes a REST API, containerized using Docker, and the image is deployed to Kubernetes using YAML configuration files.
 
 ### GitHub URL: https://github.com/abdulbasit24/DockerK8s_Assignment.git
-### Docker Pull Command: ```bash docker pull abdulbasit7/devopsassignment ```
+### Docker Pull Command: ```bash 
+docker pull abdulbasit7/devopsassignment 
+```
 ### Docker Hub URL: https://hub.docker.com/repository/docker/abdulbasit7/devopsassignment/general
 
 ## How to Deploy
